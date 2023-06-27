@@ -4,10 +4,19 @@ import { Recipe } from '../recipe.model';
 @Component({
   selector: 'app-recipe-list',
   templateUrl: './recipe-list.component.html',
-  styleUrls: ['./recipe-list.component.css']
+  styleUrls: ['./recipe-list.component.css'],
 })
 export class RecipeListComponent {
-  recipes: Recipe[] = [];
-
-  
+  recipes: Recipe[] = [
+    new Recipe(
+      'A Test Recipe',
+      'This is a test',
+      'https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3515855/recipe-label-clipart-md.png'
+    ),
+    new Recipe(
+      'A Test Recipe',
+      'This is a test',
+      'https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3515855/recipe-label-clipart-md.png'
+    ),
+  ];
 }

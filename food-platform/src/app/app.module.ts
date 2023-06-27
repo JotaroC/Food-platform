@@ -19,11 +19,8 @@ import { ShoppingEditComponent } from './feature/shopping-list/shopping-edit/sho
     ShoppingListComponent,
     ShoppingEditComponent,
   ],
-  imports: [
-    BrowserModule,
-    HeaderModule
-  ],
+  imports: [BrowserModule, HeaderModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
