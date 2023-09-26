@@ -1,9 +1,10 @@
-<app-header (pageName)="onNavigation($event)"></app-header>
-<div>
-  <div class="row mainpage">
+<app-header></app-header>
+<div class="container">
+  <div class="row">
     <div class="col-md-12">
-      <app-recipes *ngIf="naviRouter === 'recipes'"></app-recipes>
-      <app-shopping-list *ngIf="naviRouter !== 'recipes'"></app-shopping-list>
+      <!-- <app-recipes *ngIf="naviRouter === 'recipes'"></app-recipes>
+      <app-shopping-list *ngIf="naviRouter !== 'recipes'"></app-shopping-list> -->
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

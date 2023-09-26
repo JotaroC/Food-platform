@@ -11,8 +11,8 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
-      'A piece of shit',
-      'hi shit',
+      'A piece of cake',
+      'hi',
       'https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3515855/recipe-label-clipart-md.png',
       [new Ingredient('Meat', 1), new Ingredient('French Fries', 20)]
     ),
@@ -28,6 +28,10 @@ export class RecipeService {
 
   getRecipes() {
     return this.recipes.slice(); //return a new array, a copy of recipe
+  }
+
+  getRecipe(index: number) {
+    return this.recipes.slice()[index];
   }
 
   addIngredientsToShoppingList(ingredient: Ingredient[]) {
